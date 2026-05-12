@@ -21,7 +21,7 @@ warnings.filterwarnings("ignore")
 
 load_dotenv()
 
-def scan_and_load_codebase(path=".", exclude=["**/node_modules/**", "**/target/**", "**/build/**", "**/.venv/**"]):
+def scan_and_load_codebase(path=".", exclude=["**/node_modules/**", "**/target/**", "**/build/**", "**/.venv/**"], model="qwen3-coder:480b-cloud"):
 
     suffixes = ['.py', '.js', '.ts', '.c', '.cpp', '.rs', '.h', '.txt', '.md', '.html']
     
@@ -76,7 +76,7 @@ def scan_and_load_codebase(path=".", exclude=["**/node_modules/**", "**/target/*
 
     print(f"{Fore.LIGHTGREEN_EX}Initializing language model...{Style.RESET_ALL}")
 
-    llm = ChatOllama(model="gemma3", temperature=0)
+    llm = ChatOllama(model=model, temperature=0)
 
     prompt = ChatPromptTemplate.from_template("""
                     You are a helpful assistant with full access to the codebase.
