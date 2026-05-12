@@ -21,6 +21,13 @@ Example Questions:
 *   "Write `README.md` for this project."
 *   "Explain the entire workflow."
 
+### Asking questions on codebase
+![Project Analyzer Demo 1](./assets/vid1.gif)
+
+
+### Generating `README.md` 
+![Project Analyzer Demo 2](./assets/vid2.gif)
+
 ## File Types Supported
 
 The system supports indexing these file formats:
