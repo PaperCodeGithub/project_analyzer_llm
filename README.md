@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./logo.svg" alt="Project Analyzer Logo" width="350" />
+  <img src="./assets/p_an_logo.svg" alt="Project Analyzer Logo" width="350" />
 </div>
 
 # Project Analyzer
